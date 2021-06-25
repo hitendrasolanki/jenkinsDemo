@@ -47,6 +47,14 @@ pipeline {
                              sh 'mvn tomcat7:run'
                              } 
                          }
+            stage('End of pipeline') 
+                        { 
+                     steps
+                            { 
+ 
+                             sh 'echo "End of pipeline"'
+                             } 
+                         }
          } 
 }
  
