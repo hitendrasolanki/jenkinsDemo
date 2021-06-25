@@ -44,7 +44,7 @@ pipeline {
                      steps
                             { 
  
-                             sh 'mvn tomcat7:run-war'
+                             sh 'mvn tomcat7:run-war-only'
                              } 
                          }
       
