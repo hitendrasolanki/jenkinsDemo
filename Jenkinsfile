@@ -44,17 +44,12 @@ pipeline {
                      steps
                             { 
  
-                             sh 'mvn tomcat7:run'
+                             sh 'mvn tomcat7:run-war'
                              } 
                          }
-            stage('End of pipeline') 
-                        { 
-                     steps
-                            { 
- 
-                             sh 'echo "End of pipeline"'
-                             } 
-                         }
+      
+           
+           
          } 
 }
  
